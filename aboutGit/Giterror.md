@@ -19,3 +19,9 @@ $ git config --global core.autocrlf false
 
 - remote: error: this exceeds GitHub's file size limit of 100.00 MB
 	- 100.00MB 크기가 넘는 파일을 업로드시 발생하는 에러입니다.
+
+- hint: Updates were rejected because the tip of your current branch is behind ...
+	- pull을 먼저 해서 로컬 저장소와 git의 상태가 동일해야 하는데 그렇지 않아서 발생한다.
+```
+git pull origin master --rebase
+```
