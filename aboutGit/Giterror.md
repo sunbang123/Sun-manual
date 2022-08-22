@@ -23,5 +23,5 @@ $ git config --global core.autocrlf false
 - hint: Updates were rejected because the tip of your current branch is behind ...
 	- pull을 먼저 해서 로컬 저장소와 git의 상태가 동일해야 하는데 그렇지 않아서 발생한다.
 ```
-git pull origin master --rebase
+git pull origin main --rebase
 ```
