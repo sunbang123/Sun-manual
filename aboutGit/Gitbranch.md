@@ -20,5 +20,6 @@ branch-to-branch merge
 3. git push --set-upstream origin main // main branch에 병합한 내용을 push 합니다.
 
 branch delete
-1. git branch -d [삭제하려는 branch 이름]
-2. git pull
+1. git checkout main // 우선 삭제하려는 branch에서 벗어난다.
+2. git branch -d [삭제하려는 branch 이름]
+3. git pull
