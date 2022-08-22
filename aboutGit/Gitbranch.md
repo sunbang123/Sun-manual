@@ -18,3 +18,7 @@ branch-to-branch merge
 1. git checkout main // main[default] branch로 이동한다.
 2. git merge [합치려는 branch 이름] // 합치려는 branch의 내용을 main branch에 복사, 합쳐줍니다.
 3. git push --set-upstream origin main // main branch에 병합한 내용을 push 합니다.
+
+branch delete
+1. git branch -d [삭제하려는 branch 이름]
+2. git pull
