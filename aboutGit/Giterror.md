@@ -25,3 +25,6 @@ $ git config --global core.autocrlf false
 ```
 git pull origin main --rebase
 ```
+
+- error: cannot rebase: You have unstaged changes. error: Please commit or stash them.
+	- 수정된 파일이 unstaged된 상태로 있기 때문에 rebase를 열 수 없다는 뜻이다. rebase를 열려면 파일이 수정되지 않은 상태에서 하세요.
