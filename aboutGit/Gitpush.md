@@ -8,6 +8,7 @@
 	- git reset . 을 하면 내가 올린 전체 파일이 스테이징 해제 된다.
 4. git commit -m "커밋 메세지를 입력하세요." 를 통해 커밋 메세지를 적는다.
 5. git push
+- '-f'나 '--force'는 쓰지 말도록!
 
 ### 실수로 올린 파일을 삭제하고 싶을 때
 
@@ -18,8 +19,14 @@
 4. git commit -m "커밋 메세지를 입력하세요." 를 통해 커밋 메세지를 적는다.
 5. git push
 
-### 최근에 push한 commit message 바꾸고 싶을 때
+### push한 commit message 바꾸고 싶을 때
 
-1. git rebase -i HEAD~n // n에는 숫자 입력
-2. git commit --amend -m "바꿀 메시지"
-3. git push -f origin master // 강제 push 추천하진 않음. 어쩔수 없을때 사용!
+- 강제 push를 할 수 있지만 추천하지 않습니다.
+#### 처음부터 브랜치 분리를 하자!
+
+- 그 브랜치에 해당하는 feature 개발 완료하고 (개발하는 동안은 마음대로 커밋 메시지 작성)
+- main 브랜치 혹은 (develop)브랜치에 squash merge 하기.
+	- squash merger: 지금까지 커밋한 내용을 하나로 뭉쳐서 커밋하는 방법
+### rebase
+- 기점을 변환시켜주는 코드
+- 동시작업시 쓰인다.
